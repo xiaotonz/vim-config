@@ -1,0 +1,384 @@
+{
+    "workbench.colorTheme": "JetBrains Darcula Theme",
+    "editor.fontSize": 14,
+    "files.autoSave": "afterDelay",
+    "editor.mouseWheelZoom": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false
+    },
+    "redhat.telemetry.enabled": true,
+    "vim.easymotion": true,
+    "vim.leader": "<Space>",
+    "vim.foldfix": true,
+    "vim.sneak": false,
+    "vim.flash.enable": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            // 在可视化模式下 y 之后光标停到当前的位置
+            "before": [
+              "y"
+            ],
+            "after": [
+              "y",
+              "g",
+              "v",
+              "<esc>"
+            ]
+        },
+        {
+            
+          "before": ["H"],
+          "after": ["^"]
+        },
+        {
+          "before": ["L"],
+          "after": ["g", "_"]
+        },
+        {
+          "before": ["J"],
+          "after": ["5", "j"]
+        },
+        {
+          "before": ["K"],
+          "after": ["5", "k"]
+        },
+        {
+            // vim-indent-object
+            "before": ["a", "i"],
+            "after": ["a", "I"]
+        },
+        {
+            // 重构手法： 提取函数
+            "before": [
+              "<Leader>",
+              "r",
+              "f"
+            ],
+            "commands": [
+              {
+            "command": "editor.action.refactor",
+            "args": {
+              "kind": "refactor.extract.function"
+            }
+              }
+            ]
+        },
+        {
+            // 重构手法： 提取变量
+            "before": [
+              "<Leader>",
+              "r",
+              "v"
+            ],
+            "commands": [
+              "abracadabra.extract"
+            ]
+        },
+        {
+            // 向右侧跳转 利用的 easymotion
+            "before": [
+              "<Leader>",
+              "l"
+            ],
+            "after": [
+              "<leader>",
+              "<leader>",
+              "l",
+            ]
+        },
+        {
+            // 向左侧跳转 利用的 easymotion
+            "before": [
+              "<Leader>",
+              "h"
+            ],
+            "after": [
+              "<leader>",
+              "<leader>",
+              "h",
+            ]
+        },
+        {
+            // 基于行的向上跳转 利用的 easymotion
+            "before": [
+              "<Leader>",
+              "k"
+            ],
+            "after": [
+              "<leader>",
+              "<leader>",
+              "k",
+            ]
+        },
+        {
+            // 基于行的向下跳转 利用的 easymotion
+            "before": [
+              "<Leader>",
+              "j"
+            ],
+            "after": [
+              "<leader>",
+              "<leader>",
+              "j",
+            ]
+        },
+        // {
+        //     // 基于单词的跳转 单词首 全局向下 基于 easymotion
+        //     "before": [
+        //       "<Leader>",
+        //       "w"
+        //     ],
+        //     "after": [
+        //       "<leader>",
+        //       "<leader>",
+        //       "w",
+        //     ]
+        // },
+        // {
+        //     // 基于单词的跳转 单词尾 全局向下 基于 easymotion
+        //     "before": [
+        //       "<Leader>",
+        //       "e"
+        //     ],
+        //     "after": [
+        //       "<leader>",
+        //       "<leader>",
+        //       "e",
+        //     ]
+        // },
+        // {
+        //     // 基于单词的跳转 单词首 全局向上 基于 easymotion
+        //     "before": [
+        //       "<Leader>",
+        //       "b"
+        //     ],
+        //     "after": [
+        //       "<leader>",
+        //       "<leader>",
+        //       "b",
+        //     ]
+        // },
+        // {
+        //     // 基于单词的跳转 单词尾 全局向上 基于 easymotion
+        //     "before": [
+        //       "<Leader>",
+        //       "g",
+        //       "e"
+        //     ],
+        //     "after": [
+        //       "<leader>",
+        //       "<leader>",
+        //       "g",
+        //       "e",
+        //     ]
+        // },
+
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            // 光标位置大小写转换
+            "before": [
+              "<Leader>",
+              "u"
+            ],
+            "after": [
+              "~"
+            ]
+        },
+        {
+            "before": ["H"],
+            "after": ["^"]
+        },
+        {
+            "before": ["L"],
+            "after": ["g", "_"]
+        },
+        {
+            "before": ["J"],
+            "after": ["5", "j"]
+        },
+        {
+            "before": ["K"],
+            "after": ["5", "k"]
+        },
+        {
+            // 选中一个对象/数组
+            "before": [
+              "<leader>",
+              "s"
+            ],
+            "after": [
+              "V",
+              "$",
+              "%"
+            ]
+        },
+        {
+            // 向右侧跳转 利用的 easymotion
+            "before": [
+              "<Leader>",
+              "l"
+            ],
+            "after": [
+              "<leader>",
+              "<leader>",
+              "l",
+            ]
+        },
+        {
+            // 向左侧跳转 利用的 easymotion
+            "before": [
+              "<Leader>",
+              "h"
+            ],
+            "after": [
+              "<leader>",
+              "<leader>",
+              "h",
+            ]
+        },
+        {
+            // 基于行的向上跳转 利用的 easymotion
+            "before": [
+              "<Leader>",
+              "k"
+            ],
+            "after": [
+              "<leader>",
+              "<leader>",
+              "k",
+            ]
+        },
+        {
+            // 基于行的向下跳转 利用的 easymotion
+            "before": [
+              "<Leader>",
+              "j"
+            ],
+            "after": [
+              "<leader>",
+              "<leader>",
+              "j",
+            ]
+        },
+        // {
+        //     // 基于单词的跳转 单词首 全局向下 基于 easymotion
+        //     "before": [
+        //       "<Leader>",
+        //       "w"
+        //     ],
+        //     "after": [
+        //       "<leader>",
+        //       "<leader>",
+        //       "w",
+        //     ]
+        // },
+        // {
+        //     // 基于单词的跳转 单词尾 全局向下 基于 easymotion
+        //     "before": [
+        //       "<Leader>",
+        //       "e"
+        //     ],
+        //     "after": [
+        //       "<leader>",
+        //       "<leader>",
+        //       "e",
+        //     ]
+        // },
+        // {
+        //     // 基于单词的跳转 单词首 全局向上 基于 easymotion
+        //     "before": [
+        //       "<Leader>",
+        //       "b"
+        //     ],
+        //     "after": [
+        //       "<leader>",
+        //       "<leader>",
+        //       "b",
+        //     ]
+        // },
+        // {
+        //     // 基于单词的跳转 单词尾 全局向上 基于 easymotion
+        //     "before": [
+        //       "<Leader>",
+        //       "g",
+        //       "e"
+        //     ],
+        //     "after": [
+        //       "<leader>",
+        //       "<leader>",
+        //       "g",
+        //       "e",
+        //     ]
+        // },
+        {
+            // 光标在function首行, 删除整个function
+            "before": ["<Leader>", "d", "f"],
+            "after": ["V", "$", "%", "d"]
+        },
+        {
+            // 格式化代码
+            "before": ["<Leader>", "f", "d"],
+            "commands": ["editor.action.formatDocument"] 
+        },
+        {
+            // 重命名
+            "before": ["<Leader>", "r", "n"],
+            "commands": ["editor.action.rename"] 
+        },
+        {
+            "before": ["<Leader>", "["],
+            "commands": [
+              {
+                "command": "editor.fold",
+              },
+              {
+                "command": "vim.remap",
+                "args": {
+                    "after": ["$", "%"]
+                }
+              }
+            ]
+        },
+        {
+            "before": ["<Leader>", "]"],
+            "commands": [
+              {
+                "command": "editor.unfold",
+              }
+            ]
+        }
+    ],
+    "vim.operatorPendingModeKeyBindings": [
+        {
+            "before": ["H"],
+            "after": ["^"]
+        },
+        {
+            "before": ["L"],
+            "after": ["g", "_"]
+        },
+        {
+            "before": ["a", "i"],
+            "after": ["a", "I"]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-c>": false
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vscode-edge-devtools.webhintInstallNotification": true
+}

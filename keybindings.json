@@ -1,0 +1,95 @@
+// Place your key bindings in this file to override the defaults
+[
+    // 快捷键替换分离窗口和关闭窗口
+    {
+        "key": "ctrl+cmd+\\",
+        "command": "workbench.action.splitEditorUp"
+    },
+    {
+        "key": "cmd+k cmd+\\",
+        "command": "-workbench.action.splitEditorUp"
+    },
+    {
+        "key": "ctrl+cmd+w",
+        "command": "workbench.action.closeEditorsInGroup"
+    },
+    {
+        "key": "cmd+k w",
+        "command": "-workbench.action.closeEditorsInGroup"
+    },
+    // 方向键替换窗口移动 
+    {
+        "key": "shift+left",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal'",
+        "args": {
+          "after": ["<c-w>", "h"]
+        }
+    },
+    {
+        "key": "shift+right",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal'",
+        "args": {
+          "after": ["<c-w>", "l"]
+        }
+    },
+    {
+        "key": "shift+up",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal'",
+        "args": {
+          "after": ["<c-w>", "k"]
+        }
+    },
+    {
+        "key": "shift+down",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal'",
+        "args": {
+          "after": ["<c-w>", "j"]
+        }
+    },
+    // 组合键+jkhl控制窗口移动
+    {
+        "key": "shift+ctrl+h",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal'",
+        "args": {
+          "after": ["<c-w>", "h"]
+        }
+    },
+    {
+        "key": "shift+ctrl+l",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal'",
+        "args": {
+          "after": ["<c-w>", "l"]
+        }
+    },
+    {
+        "key": "shift+ctrl+k",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal'",
+        "args": {
+          "after": ["<c-w>", "k"]
+        }
+    },
+    {
+        "key": "shift+ctrl+j",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal'",
+        "args": {
+          "after": ["<c-w>", "j"]
+        }
+    },
+    {
+      "key": "shift+cmd+k shift+cmd+w",
+      "command": "workbench.action.closeWindow"
+    },
+    {
+      "key": "shift+cmd+w",
+      "command": "-workbench.action.closeWindow"
+    },
+    
+]
